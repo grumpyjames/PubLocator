@@ -1,7 +1,10 @@
 package org.grumpysoft.pl;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.text.util.Linkify;
 import android.view.Gravity;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.LinearLayout;
@@ -23,9 +26,14 @@ public class PubLocatorActivity extends Activity {
         TextView two = new TextView(this);
         two.setLayoutParams(lp);
         two.setText("I am number two");
+        two.setAutoLinkMask(Linkify.ALL);
         two.setGravity(Gravity.CENTER);
         llv.addView(one);
         llv.addView(two);
         setContentView(llv);
+        Intent ffs = new Intent();
+        ffs.setAction(Intent.ACTION_VIEW);
+        ffs.setData(Uri.parse("geo:51.4,0.0?z=18"));
+        startActivity(ffs);
     }
 }
