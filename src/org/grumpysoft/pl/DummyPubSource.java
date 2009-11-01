@@ -6,8 +6,8 @@ import java.util.ArrayList;
 public class DummyPubSource implements PubSource {
 
 	public ArrayList<Pub> findPubs(double latitude, double longitude) {
-		Pub one = new Pub("Jerusalem Tavern", 5, 51.521129, -.103496);
-		Pub two = new Pub("Hand and Shears", 4, 51.2, -.08923);
+		Pub one = new Pub("Jerusalem Tavern", 5, 51.521129, -.103496, 0);
+		Pub two = new Pub("Hand and Shears", 4, 51.2, -.08923, 1);
 		ArrayList<Pub> to_return = new ArrayList<Pub>();
 		to_return.add(one);
 		to_return.add(two);
