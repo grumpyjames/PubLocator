@@ -26,7 +26,7 @@ public final class PubSummaryLayout extends LinearLayout {
 	private final void init () {
 		super.setLayoutParams(lp_);
 		TextView pub_name = new TextView(instantiator_);
-		pub_name.setText(pub_.name());
+		pub_name.setText(pub_.name() + " (" + pub_.rating() + " pint(s))");
 		LayoutParams pt_lp = new LayoutParams(lp_);
 		pt_lp.weight = 1;
 		pub_name.setLayoutParams(pt_lp);
