@@ -20,7 +20,7 @@ public class HttpPubSource implements PubSource {
 	
 	public ArrayList<Pub> findPubs(double latitude, double longitude) {
 		StringBuilder sb = new StringBuilder();
-		sb.append("http://foundry.digihippo.net/fancyapint/webroot/Pubs/FindByLocation/");
+		sb.append("http://foundry.digihippo.net/fancyapint/webroot/Pubs/FindNearest/");
 		sb.append(latitude).append("/").append(longitude).append("/");
 		HttpGet httpget = new HttpGet(sb.toString());
         ResponseHandler<String> responseHandler = new BasicResponseHandler();
