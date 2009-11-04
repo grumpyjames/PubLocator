@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<org.grumpysoft.pl.PubSummaryLayout android:id="@+id/pub_summary" 
+	android:layout_width="fill_parent" 
+	android:layout_height="50px" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:id="@+id/summary_text"
+		android:text="Moo"
+		style="@style/pub_summary_text"
+	    android:gravity="center_horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="1"/>
+	<Button android:id="@+id/review_button"
+		android:text="R"
+		style="@style/pub_summary_button"
+	    android:gravity="center_horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="0"/>
+	<Button android:id="@+id/map_button" 
+		android:text="M"
+		style="@style/pub_summary_button"
+	    android:gravity="center_horizontal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="fill_parent"
+	    android:layout_weight="0"/>
+</org.grumpysoft.pl.PubSummaryLayout>

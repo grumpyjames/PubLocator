@@ -1,0 +1,10 @@
+<resources>
+<style name="pub_summary_text">
+    <item name="android:textColor">#fff</item>
+	<item name="android:background">#2211ff</item>
+</style>
+<style name="pub_summary_button">
+    <item name="android:textColor">#fff</item>
+	<item name="android:background">#3322ff</item>
+</style>
+</resources>

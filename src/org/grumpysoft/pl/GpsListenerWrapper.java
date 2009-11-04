@@ -15,7 +15,7 @@ public class GpsListenerWrapper implements LocationListener {
 	public GpsListenerWrapper(UpdatableLocation ul, Context instantiator) {
 		ul_ = ul;
 		lm_ = (LocationManager) instantiator.getSystemService(Context.LOCATION_SERVICE);
-		lm_.requestLocationUpdates(LocationManager.GPS_PROVIDER,
+		lm_.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
 				30000, 250, this);
 	}
 
